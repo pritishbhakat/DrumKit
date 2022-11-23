@@ -9,8 +9,7 @@ for (var i = 0; i < n; i++) {
    buttonAnimation(buttonInnerHTML);
     
   });
-}
-
+  
   document.addEventListener("keypress",function(event){
     var keyPress=event.key;
     soundPlay(keyPress);
@@ -18,6 +17,9 @@ for (var i = 0; i < n; i++) {
 
   
   });
+}
+
+  
 
   function soundPlay(key)
   {

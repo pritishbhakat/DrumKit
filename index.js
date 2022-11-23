@@ -10,14 +10,16 @@ for (var i = 0; i < n; i++) {
     
   });
   
-  document.addEventListener("keypress",function(event){
+ 
+}
+
+ document.addEventListener("keypress",function(event){
     var keyPress=event.key;
     soundPlay(keyPress);
     buttonAnimation(keyPress);
 
   
   });
-}
 
   
 

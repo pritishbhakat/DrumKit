@@ -3,10 +3,8 @@ var n = document.querySelectorAll(".drum").length;
 for (var i = 0; i < n; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     var buttonInnerHTML = this.innerHTML;
-   // makeSound(buttonInnerHTML);
   
    soundPlay(buttonInnerHTML);
-   buttonAnimation(buttonInnerHTML);
     
   });
   
@@ -16,7 +14,6 @@ for (var i = 0; i < n; i++) {
  document.addEventListener("keypress",function(event){
     var keyPress=event.key;
     soundPlay(keyPress);
-    buttonAnimation(keyPress);
 
   
   });
@@ -59,16 +56,6 @@ for (var i = 0; i < n; i++) {
     }
 
 
-  }
-
-  function buttonAnimation(currentKey)
-  {
-    var activeButton=document.querySelector("."+currentKey);
-    activeButton.classList.add("pressed");
-    setTimeout(function(){
-      activeButton.classList.remove("pressed");
-
-    },100);
   }
 
 
